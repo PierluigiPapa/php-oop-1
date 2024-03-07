@@ -10,13 +10,13 @@ class Movie {
     public $language;
     
     // Costruttore per inizializzare le variabili del film
-    public function __construct($title, $director,  $year, $actors, $genres, $language) {
-        $this->title = $title;
-        $this->director = $director;
-        $this->year = $year;
-        $this->actors = $actors;
-        $this->genres = $genres;
-        $this->language = $language;
+    public function __construct($_title, $_director,  $_year, $_actors, $_genres, $_language) {
+        $this->title = $_title;
+        $this->director = $_director;
+        $this->year = $_year;
+        $this->actors = $_actors;
+        $this->genres = $_genres;
+        $this->language = $_language;
     }
 
     public function getTitle() {
@@ -43,5 +43,12 @@ class Movie {
         return $this->language;
     }
 }
+
+//Istanzio due oggetti Movie
+$movie1 = new Movie("Il Gladiatore", "Ridley Scott", 2000, ["Russell Crowe", "Joaquin Phoenix"], ["Action", "Drama"], "English");
+$movie2 = new Movie("Karate Kid", "John G. Avildsen", 1984, ["Ralph Macchio", "Pat Morita"], ["Drama", "Sport"], "English");
+
+//Stampa il valore di movie1 e movie2
+var_dump($movie1,$movie2);
 
 ?>
