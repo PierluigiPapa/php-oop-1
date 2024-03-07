@@ -1,4 +1,4 @@
-<? php
+<?php
 
 class Movie {
     // Variabili di istanza
@@ -43,6 +43,5 @@ class Movie {
         return $this->language;
     }
 }
-
 
 ?>
